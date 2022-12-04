@@ -1,0 +1,25 @@
+POST http://localhost:5000/post
+Content-Type: application/json
+
+{
+  "title": "Ini Judul NEW",
+  "content": "Ini content NEW saya."
+}
+
+###
+GET http://localhost:5000/post
+
+###
+GET http://localhost:5000/post/1
+
+###
+PATCH http://localhost:5000/post/1
+Content-Type: application/json
+
+{
+  "title": "Ini Judul UPDATED",
+  "content": "Ini content UPDATED saya."
+}
+
+###
+DELETE http://localhost:5000/post/1
